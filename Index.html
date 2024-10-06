@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>May 2024 Geomagnetic Storms</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        .marquee-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 20px 0;
+        }
+        .marquee-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll 15s linear infinite;
+        }
+        .marquee-content img {
+            height: 300px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .marquee-content img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Lightbox styles */
+        .lightbox {
+            display: none; /* Hidden by default */
+            position: fixed; 
+            z-index: 1000; 
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .lightbox-content {
+            margin: 10% auto;
+            display: block;
+            width: 100%;
+            max-width: 700px;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Keyframes for marquee animation */
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+
+<body id="top">
+    <header>
+        <h1>May 2024 Geomagnetic Storms</h1>
+        <nav>
+            <h3><u><a href="#overview">Overview</a></u></h3>
+            <h3><u><a href="#nasa-data">NASA Data</a></u></h3>
+            <h3><u><a href="#visualization">Visualizations</a></u></h3>
+            <h3><u><a href="#impact">Impacts</a></u></h3>
+        </nav>
+
+    </header>
+
+    <section id="overview">
+        <h2><u>Overview</u></h2>
+        <h3>
+            <p>In May 2024, there was a significant geomagnetic storm that affected various regions of the Earth. Such
+                storms can be caused by solar flares or coronal mass ejections (CMEs) that send charged particles
+                towards our planet. This particular storm was notable for its intensity, leading to spectacular auroras
+                in areas that don’t usually see them, as well as disruptions in satellite communications and navigation
+                systems.
+
+                People in high-latitude regions reported vibrant displays of the Northern and Southern Lights, while
+                some airlines rerouted flights to avoid increased radiation exposure at higher altitudes. Power grids in
+                some areas were also put on high alert to prevent overloads due to fluctuations in the geomagnetic
+                field.</p>
+
+            <section id="nasa-data">
+                <h2><u>NASA Data</u></h2>
+                <p>Below is a photo showing A coronal aurora appeared over southwestern British Columbia on May 10,
+                    2024..</p>
+                    <div class="marquee-container">
+                        <div class="marquee-content">
+                            <img src="auroras-100.webp" alt="Aurora Image 1" onclick="openLightbox(this.src)">
+                            <img src="NorthernLights.jpg" alt="Aurora Image 2" onclick="openLightbox(this.src)">
+                            <img src="background1.jpg" alt="Aurora Image 3" onclick="openLightbox(this.src)">
+                            <img src="1.jpg" alt="Aurora Image 4" onclick="openLightbox(this.src)">
+                            <img src="2.jpg" alt="Aurora Image 5" onclick="openLightbox(this.src)">
+                            <img src="3.jpg" alt="Aurora Image 6" onclick="openLightbox(this.src)">
+                            <img src="4.jpg" alt="Aurora Image 7" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                    <div id="lightbox" class="lightbox">
+                        <span class="close" onclick="closeLightbox()">&times;</span>
+                        <img class="lightbox-content" id="lightbox-img">
+                        
+                    </div>
+                <!-- end -->
+                <div id="solar-data">
+                    <!-- Placeholder for Solar Data -->
+                    <canvas id="solarChart" width="400" height="200"></canvas>
+                </div>
+            </section>
+
+            <section id="visualization">
+                <h2><u>Visual Representations</u></h2>
+                <p>Watch the video below to see a visual representation of the geomagnetic storms of May 2024.</p>
+                <video width="600" controls>
+                    <source src="Space.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video width="600" controls>
+                    <source src="Northern.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section id="impact">
+                <h2><u>Impacts on Earth</u></h2>
+                <p>The geomagnetic storms in May 2024 disrupted communication systems and satellites, affected GPS
+                    signals, and produced stunning auroras in regions much farther south than usual.</p>
+                <p>From May 3 through May 9, 2024, NASA’s Solar Dynamics Observatory observed 82 notable solar flares.
+                    The flares came mainly from two active regions on the Sun called AR 13663 and AR 13664. This video
+                    highlights all flares classified at M5 or higher with nine categorized as X-class solar flares.
+                    NASA’s Goddard Space Flight Center.The first signs of the solar storm started late on May 7 with two
+                    strong solar flares. From May 7 – 11, multiple strong solar flares and at least seven CMEs stormed
+                    toward Earth. Eight of the flares in this period were the most powerful type, known as X-class,
+                    with the strongest peaking with a rating of X5.8. (Since then, the same solar region has released
+                    many more large flares, including an X8.7 flare — the most powerful flare seen this solar cycle — on
+                    May 14.)</p>
+                <ul>
+                    The geomagnetic storm in May 2024 was driven primarily by a powerful coronal mass ejection (CME)
+                    from the Sun, which occurred a few days prior. Here are some more details about the event:
+
+                    <li> Causes</li>
+                    Solar Activity: The storm was triggered by a large solar flare that released a CME, sending a stream
+                    of charged particles towards Earth. This solar event was observed by space weather monitoring
+                    satellites, allowing scientists to predict its arrival.</li>
+
+                    <li>Effects
+                    <li>Auroras: The storm produced stunning auroras visible much farther south than usual, with reports
+                        of sightings in places like the northern United States and parts of Europe.</li>
+
+                    <li>Communications: Many users experienced disruptions in radio communications, particularly in
+                        high-frequency bands, which are often affected by geomagnetic activity.</li>
+
+                    <li>Satellites: Satellites in orbit experienced increased drag due to the expanded atmosphere caused
+                        by the storm, which can affect their orbits and operational capabilities.</li>
+
+                    <li>Power Grids: Utilities in regions prone to geomagnetic storms monitored their systems closely to
+                        prevent outages and protect infrastructure. Some operators implemented precautionary measures.
+                    </li>
+
+                    <li> Response and Monitoring</li>
+                    <li>Space Weather Agencies: Organizations like NOAA's Space Weather Prediction Center (SWPC) and the
+                        European Space Agency closely tracked the storm, providing real-time updates and forecasts.</li>
+
+                    <li>Public Awareness: Increased media coverage and social media alerts helped inform the public
+                        about potential disruptions and the chance to see auroras.</li>
+
+                    <li>Future Implications</li>
+                    <li>Geomagnetic storms can serve as a reminder of the Sun's influence on Earth. Scientists are
+                        continuously improving their ability to predict such events, which is crucial for minimizing
+                        their impacts on technology and infrastructure.
+
+                        If you have more specific aspects you’d like to explore—like the science behind geomagnetic
+                        storms or their long-term effects—let me know!
+                </ul>
+
+            </section>
+
+
+            <footer>
+                <p>&copy; 2024 Geomagnetic Storms Education Site | Powered by Debugging Dynamos</p>
+            </footer>
+            
+
+            <script src="Chart.js"></script>
+            <script>
+                let currentIndex = 0;
+
+                function showSlides(index) {
+                    const slides = document.querySelectorAll('.carousel-slide img');
+                    if (index >= slides.length) { currentIndex = 0; }
+                    if (index < 0) { currentIndex = slides.length - 1; }
+                    slides.forEach((img, i) => {
+                        img.style.display = (i === currentIndex) ? 'block' : 'none';
+                    });
+                }
+
+                function moveSlide(step) {
+                    currentIndex += step;
+                    showSlides(currentIndex);
+                }
+
+                // Show the first slide initially
+                window.onload = () => showSlides(currentIndex);
+            </script>
+            <script>
+                // Function to open the lightbox with the selected image
+                function openLightbox(src) {
+                    document.getElementById("lightbox").style.display = "block";
+                    document.getElementById("lightbox-img").src = src;
+                }
+        
+                // Function to close the lightbox
+                function closeLightbox() {
+                    document.getElementById("lightbox").style.display = "none";
+                }
+            </script>
+            
+        </body>
+</html>
