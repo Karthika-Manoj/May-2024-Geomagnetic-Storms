@@ -1,0 +1,107 @@
+body {
+    background-image: url('earth1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+#solar-data img {
+    width: 60%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #fff;
+}
+
+img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Carousel container */
+.carousel-container {
+    position: relative;
+    width: 90%;
+    margin: 0 ;
+}
+.carousel-slide{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+/* Carousel slides */
+.carousel-slide img {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+
+/* Show the first image initially */
+.carousel-slide img:first-child {
+    
+}
+
+/* Navigation buttons */
+/* .prev-btn, 
+.next-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+ */
+/* .prev-btn {  
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+ */
+/* Add some hover effects */
+/* .prev-btn:hover, 
+.next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+ } */
